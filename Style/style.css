@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital@1&family=Mukta:wght@300&family=Roboto+Condensed:wght@300&family=Roboto+Mono:wght@100&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    background-color: #fff;
+}
+
+.first-sec {
+    width: 100%;
+    padding: 10px 0;
+    height: 100vh;
+    background-image: url('../imgs/hero.png');
+    background-size: 100% 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.my-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 10%;
+    padding: 20px;
+}
+
+.my-header .logo {
+    width: 50px;
+    height: 50px;
+    background-image: url('../imgs/logo.png');
+    background-size: 100% 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.header-pt2>ol {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.header-pt2>ol>li {
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+    font-family: 'Lato', sans-serif;
+    color: #fff;
+    font-weight: 700;
+    list-style-type: none;
+}
+
+.header-pt2>ol>li>a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    transition: color 0.3s ease;
+    position: relative;
+}
+
+.header-pt2>ol>li>a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #fff;
+    transition: width 0.3s ease;
+}
+
+.header-pt2>ol>li>a:hover::before {
+    width: 100%;
+}
+
+.text-content-home {
+    position: absolute;
+    top: 170px;
+    left: 350px;
+    right: 0;
+}
+
+.mountains {
+    width: 50%;
+}
+
+@media screen and (max-width: 768px) {
+    .my-header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header-pt1,
+    .header-pt2 {
+        margin-bottom: 20px;
+    }
+}
