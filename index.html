@@ -4,42 +4,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="Style/style.css">
     <title>Task-SPA</title>
-    <link rel="stylesheet" href="Style/style.css">
+
 </head>
 
 <body>
     <header class="my-header">
-        <div class="header-pt1">
-            <img src="imgs/first-logo.png" alt="head-logo" class="logo" />
-        </div>
-        <div class="header-pt2">
-            <ol>
-                <li><a href="#about">01. About</a></li>
-                <li><a href="#team">02. Team</a></li>
-            </ol>
+        <div class="headerParent">
+            <div class="header-pt1">
+                <img src="imgs/first-logo.png" alt="head-logo" class="logo" />
+            </div>
+            <div class="header-pt2">
+                <ol>
+                    <li><a href="#about" class="hrd-link">01. About</a></li>
+                    <li><a href="#team" class="hrd-link">02. Team</a></li>
+                    </ol>
+            </div>
         </div>
     </header>
-    <section class="first-sec">
-        <div class="first-sec-pt">
+    <main>
+        <section class="first-sec">
             <div class="background-img-home">
                 <img src="imgs/hero.png" alt="Mountains" class="mountains" />
             </div>
             <div class="text-content-home">
                 <img src="imgs/LOSANGELES-MOUNTAINS.png" alt="LOSANGELES-MOUNTAINS" class="losangeles-mountains" />
-                </div>
-        </div>
-    </section>
-    <section class="second-sec" id="about">
-        <div class="text-content-about">
-            <h1>About</h1>
-        </div>
-        <div class="about-content">
-            <div class="about-content-pt1">
-                <h2>What is Task-SPA?</h2>
             </div>
-        </div>
-    </section>
+        </section>
+        <section class="second-sec" id="about">
+            <div class="text-content-about">
+                <h1>About</h1>
+            </div>
+            <div class="about-content">
+                <div class="about-content-pt1">
+                    <h2>What is Task-SPA?</h2>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="/script/scrip.js"></script>
 </body>
 
 </html>
