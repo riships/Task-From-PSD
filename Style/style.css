@@ -11,19 +11,10 @@ body {
     font-size: 14px;
     line-height: 1.42857143;
     background-color: #fff;
-}
-
-.first-sec {
-    width: 100%;
-    padding: 10px 0;
-    height: 100vh;
-    background-image: url('../imgs/hero.png');
-    background-size: 100% 100%;
-    background-position: center center;
-    background-repeat: no-repeat;
     position: relative;
 }
 
+/* My styling for header nav bar */
 .my-header {
     display: flex;
     justify-content: space-between;
@@ -31,6 +22,9 @@ body {
     width: 80%;
     margin: 0 10%;
     padding: 20px;
+    position: sticky;
+        top: 0;
+        z-index: 999;
 }
 
 .my-header .logo {
@@ -82,25 +76,38 @@ body {
     width: 100%;
 }
 
-.text-content-home {
+.first-sec {
     position: absolute;
-    top: 170px;
-    left: 350px;
+    top: 0;
+        width: 100%;
+    }
+    
+    .first-sec-pt {
+        position: relative;
+        width: 100%;
+        min-height: 100vh;
+    }
+    
+    .background-img-home {
+        position: absolute;
+        top: 0;
+        left: 0;
     right: 0;
 }
 
 .mountains {
-    width: 50%;
+    width: 100%;
 }
 
-@media screen and (max-width: 768px) {
-    .my-header {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .header-pt1,
-    .header-pt2 {
-        margin-bottom: 20px;
-    }
+.text-content-home {
+    width: 38%;
+    position: absolute;
+    top: 31%;
+    left: 44%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+.losangeles-mountains {
+    width: 100%;
+    height: auto;
 }
