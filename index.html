@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="Style/style.css">
+    <link rel="stylesheet" href="Style/cards/swiper-bundle.min.css">
+    <link rel="stylesheet" href="Style/cards/card.css">
     <title>Task-SPA</title>
 
 </head>
@@ -40,8 +42,8 @@
                         <span>HISTORY</span><br />
                         <span class="color-box"></span>
                     </h2>
-                    </div>
-                    <div class="about-content">
+                </div>
+                <div class="about-content">
                     <p class="lorm-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos est nesciunt
                         deleniti. Odio ipsum
                         sed, vero eius iure
@@ -50,40 +52,57 @@
                         Doloremque nesciunt amet blanditiis, repellat reprehenderit saepe numquam sed quos enim
                         iusto quod molestiae
                         praesentium quae.</p>
+                </div>
+            </div>
+            <div class="cursol">
+                <div class="slide-container swiper">
+                    <div class="slide-content">
+                        <div class="card-wrapper swiper-wrapper">
+                            <div class="card swiper-slide">
+                                <img src="imgs/background-cursol-1.png" alt="image 1">
+                            </div>
+                            <div class="card swiper-slide">
+                                <img src="imgs/background-cursol-2.png" alt="image 2">
+                            </div>
+                            <div class="card swiper-slide">
+                                <img src="imgs/background-cursol-1.png" alt="image 3">
+                            </div>
+                            <div class="card swiper-slide">
+                                <img src="imgs/background-cursol-2.png" alt="image 4">
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
                     </div>
-                    </div>
-                    <div class="cursol">
-                        <div class="slider-container">
-                            <div class="slides">
-                                <img src="imgs/background-cursol-1.png" alt="Image 1">
-                            </div>
-                            <div class="slides">
-                                <img src="imgs/background-cursol-1.png" alt="Image 1">
-                            </div>
-                            <div class="slides">
-                                <img src="imgs/background-cursol-1.png" alt="Image 1">
-                            </div>
-                            <div class="slides">
-                                <img src="imgs/background-cursol-1.png" alt="Image 1">
-                            </div>
-                            <div class="slides">
-                                <img src="imgs/background-cursol-1.png" alt="Image 1">
-                            </div>
-                            <div class="slides">
-                                <img src="imgs/background-cursol-1.png" alt="Image 1">
-                            </div>
-                            <div class="slides">
-                                <img src="imgs/background-cursol-1.png" alt="Image 1">
-                            </div>
-                            <div class="dots-container"></div>
-                            <button class="prev" onclick="changeSlide(-1)">❮</button>
-                            <button class="next" onclick="changeSlide(1)">❯</button>
                 </div>
             </div>
         </section>
+        <section class="third-sec" id="skills">
+            <div class="third-sec-parent">
+                <div class="text-content-skills">
+                    <h1>02</h1>
+                    <h2>
+                        <span>CLIMB</span><br />
+                        <span class="color-box"></span>
+                    </h2>
+                </div>
+
+                <div class="skills-content">
+                    <p class="lorm-text">Cras scelerisque id quam sed dignissim Pellentesque urna nunc, gravida quis
+                        hendrerit ac,
+                        tristique ut quam. Vivamus
+                        suscipit dignissim tortor nec congue.</p>
+                </div>
+            </div>
+        </section>
+
     </main>
-    <script src="/script/scrip.js"></script>
-    <script src="/script/cursol.js"></script>
+
+
+    <script src="script/cards/swiper-bundle.min.js"></script>
+    <script src="script/scrip.js"></script>
+    <script src="script/cards/cursol.js"></script>
+
+
 
 </body>
 
