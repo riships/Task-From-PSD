@@ -29,13 +29,9 @@ body {
     width: 64%;
     margin: 0 18%;
     padding: 20px;
-
 }
 
-.headerParent .logo {
-    width: 100%;
-    height: 100%;
-}
+
 
 .header-pt2>ol {
     display: flex;
@@ -137,6 +133,13 @@ body {
     margin: 0 0 0 80px;
 }
 
+.lorm-text2 {
+    font-family: 'Lato', sans-serif;
+    font-size: 10pt;
+    font-weight: 400;
+    margin: 0 0 0 10px;
+}
+
 .cursol {
     position: absolute;
     bottom: 0;
@@ -170,6 +173,54 @@ img {
 .third-sec-parent {
     display: flex;
     flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    width: 50%;
+}
+
+.skills-content {
+    text-align: left;
+}
+/* Add basic styling to tabs */
+.viewLink {
+    display: inline-block;
+    padding: 5px 20px;
+    background-color: #eee;
+    cursor: pointer;
+    margin-right: 5px;
+    border: 0px solid #ccc;
+    text-decoration: none;
+    color: #333;
+}
+.active{
+    background-color: #b0b4be;
+    color: #414f6b;
+}
+
+/* Style the active tab */
+#active {
+    background-color: #3498db;
+    color: #fff;
+}
+.tabs-container{
+    width: 100%;
+    height: 25px;
+    background-color: #414f6b;
+}
+
+/* Style the content */
+.content {
+    display: none;
+}
+.content.show{
+    display: block;
+}
+.contentChild{
+    width: 100%;
+    height: 800px;
+    background-image: url('../imgs/mount1.png');
+    background-position: center center;
+    background-size: 100% 100%;
 }
 
 /* Different width for Different Devices */
@@ -177,7 +228,8 @@ img {
 @media (max-width:767px) {
     .first-sec {
         width: 100%;
-        min-height: 250px;
+        min-height: 300px;
+        height: 100%;
     }
 
     /* Background Image Styles */
@@ -195,9 +247,8 @@ img {
     }
 
     .second-sec {
-        /* margin-top: 65px; */
         width: 100%;
-        min-height: 1200px;
+        min-height: 800px;
         background-image: url('../imgs/bg-2.png');
         background-position: top center;
         background-size: cover;
@@ -207,6 +258,39 @@ img {
 
     .about-content {
         width: 80%;
+    }
+
+    .headerParent {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 90%;
+        margin: 0 5%;
+        padding: 10px;
+    }
+
+    .headerParent .logo {
+        width: 50%;
+        height: 50%;
+    }
+
+    .header-pt2>ol>li {
+        font-size: 0.7em;
+        font-weight: 500;
+        color: #333;
+        font-family: 'Lato', sans-serif;
+        color: #fff;
+        font-weight: 700;
+        list-style-type: none;
+    }
+
+    .my-header {
+        width: 100%;
+        position: sticky;
+        top: 0;
+        z-index: 9999;
+        height: 40px;
+        cursor: pointer;
     }
 }
 
@@ -233,7 +317,7 @@ img {
     .second-sec {
         /* margin-top: 65px; */
         width: 100%;
-        min-height: 1100px;
+        min-height: 800px;
         background-image: url('../imgs/bg-2.png');
         background-position: top center;
         background-size: cover;
@@ -267,9 +351,8 @@ img {
     }
 
     .second-sec {
-        /* margin-top: 65px; */
         width: 100%;
-        min-height: 1000px;
+        min-height: 800px;
         background-image: url('../imgs/bg-2.png');
         background-position: top center;
         background-size: cover;
@@ -285,7 +368,7 @@ img {
 @media (min-width:1200px) {
     .first-sec {
         width: 100%;
-        min-height: 600px;
+        min-height: 500px;
     }
 
     /* Background Image Styles */
@@ -303,7 +386,6 @@ img {
     }
 
     .second-sec {
-        /* margin-top: 65px; */
         width: 100%;
         min-height: 800px;
         background-image: url('../imgs/bg-2.png');

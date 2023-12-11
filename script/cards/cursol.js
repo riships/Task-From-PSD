@@ -3,7 +3,7 @@ var swiper = new Swiper(".slide-content", {
         delay: 5000,
     },
     slidesPerView: 4,
-    spaceBetween: 25,
+    spaceBetween: 20,
     loop: true,
     centerSlide: 'true',
     fade: 'true',

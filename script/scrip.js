@@ -17,3 +17,22 @@ window.addEventListener('scroll', function () {
         });
     }
 });
+
+const myMoutTabs = document.querySelectorAll('.viewLink');
+const myTabs = document.querySelectorAll('.content');
+
+myMoutTabs.forEach((tab, index) => {
+    tab.onclick = () => {
+        myMoutTabs.forEach((t) => {
+            t.classList.remove('active');
+        });
+
+        myTabs.forEach((elem) => {
+            elem.classList.remove('show');
+        });
+
+        tab.classList.add('active');
+        myTabs[index].classList.add('show');
+    };
+});
+
