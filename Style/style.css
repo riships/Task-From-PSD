@@ -87,48 +87,9 @@ body {
     color: #404f6c !important;
 }
 
-/* my home section styling */
-.first-sec {
-    width: 100%;
-    min-height: 600px;
-}
-
-.background-img-home {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-}
-
-.mountains {
-    width: 100%;
-}
-
-.text-content-home {
-    width: 37%;
-    position: absolute;
-    top: 33.5%;
-    left: 44.5%;
-    transform: translateX(-50%);
-    text-align: center;
-}
-
-.losangeles-mountains {
-    width: 100%;
-    height: auto;
-}
+/* Home section styling */
 
 /* my about section styling */
-.second-sec {
-    margin-top: 65px;
-    width: 100%;
-    min-height: 800px;
-    background-image: url('../imgs/bg-2.png');
-    background-position: center center;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    position: relative;
-}
 
 
 .text-content-about,
@@ -167,9 +128,7 @@ body {
     background-color: rgb(106, 122, 149);
 }
 
-.about-content {
-    width: 50%;
-}
+
 
 .lorm-text {
     font-family: 'Lato', sans-serif;
@@ -211,4 +170,150 @@ img {
 .third-sec-parent {
     display: flex;
     flex-direction: row;
+}
+
+/* Different width for Different Devices */
+
+@media (max-width:767px) {
+    .first-sec {
+        width: 100%;
+        min-height: 250px;
+    }
+
+    /* Background Image Styles */
+    .background-img-home {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image: url('../imgs/hero.jpg');
+        background-size: contain;
+        background-position: top center;
+        /* Adjust as needed */
+        background-repeat: no-repeat;
+    }
+
+    .second-sec {
+        /* margin-top: 65px; */
+        width: 100%;
+        min-height: 1200px;
+        background-image: url('../imgs/bg-2.png');
+        background-position: top center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+    }
+
+    .about-content {
+        width: 80%;
+    }
+}
+
+@media (min-width:768px) and (max-width:991px) {
+    .first-sec {
+        width: 100%;
+        min-height: 300px;
+    }
+
+    /* Background Image Styles */
+    .background-img-home {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image: url('../imgs/hero.jpg');
+        background-size: contain;
+        background-position: top center;
+        /* Adjust as needed */
+        background-repeat: no-repeat;
+    }
+
+    .second-sec {
+        /* margin-top: 65px; */
+        width: 100%;
+        min-height: 1100px;
+        background-image: url('../imgs/bg-2.png');
+        background-position: top center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+    }
+
+    .about-content {
+        width: 70%;
+    }
+}
+
+@media (min-width:992px) and (max-width:1199px) {
+    .first-sec {
+        width: 100%;
+        min-height: 400px;
+    }
+
+    /* Background Image Styles */
+    .background-img-home {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image: url('../imgs/hero.jpg');
+        background-size: contain;
+        background-position: top center;
+        /* Adjust as needed */
+        background-repeat: no-repeat;
+    }
+
+    .second-sec {
+        /* margin-top: 65px; */
+        width: 100%;
+        min-height: 1000px;
+        background-image: url('../imgs/bg-2.png');
+        background-position: top center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+    }
+
+    .about-content {
+        width: 60%;
+    }
+}
+
+@media (min-width:1200px) {
+    .first-sec {
+        width: 100%;
+        min-height: 600px;
+    }
+
+    /* Background Image Styles */
+    .background-img-home {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image: url('../imgs/hero.jpg');
+        background-size: cover;
+        background-position: top center;
+        /* Adjust as needed */
+        background-repeat: no-repeat;
+    }
+
+    .second-sec {
+        /* margin-top: 65px; */
+        width: 100%;
+        min-height: 800px;
+        background-image: url('../imgs/bg-2.png');
+        background-position: top center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+    }
+
+    .about-content {
+        width: 50%;
+    }
 }
